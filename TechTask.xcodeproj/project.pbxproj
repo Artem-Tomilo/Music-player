@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38524A4528CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */; };
+		38524A4728CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */; };
 		385F3FBE28C2861000481084 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 385F3FBD28C2861000481084 /* song1.mp3 */; };
 		385F3FC028C2BCF300481084 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 385F3FBF28C2BCF300481084 /* song2.mp3 */; };
 		385F3FC228C365C400481084 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F3FC128C365C400481084 /* Model.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png"; sourceTree = "<group>"; };
+		38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png"; sourceTree = "<group>"; };
 		385F3FBD28C2861000481084 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		385F3FBF28C2BCF300481084 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
 		385F3FC128C365C400481084 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38524A4328CA3C7000010974 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */,
+				38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		385F3FCB28C4D18400481084 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 				38FA4E9A28B4DDDA009AFA87 /* Assets.xcassets */,
 				38FA4E9C28B4DDDA009AFA87 /* LaunchScreen.storyboard */,
 				38FA4E9F28B4DDDA009AFA87 /* Info.plist */,
+				38524A4328CA3C7000010974 /* Screens */,
 				385F3FD628C7355100481084 /* Fonts */,
 				385F3FCB28C4D18400481084 /* Songs */,
 			);
@@ -172,8 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				385F3FCA28C4C20900481084 /* song3.mp3 in Resources */,
+				38524A4528CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png in Resources */,
 				38FA4E9E28B4DDDA009AFA87 /* LaunchScreen.storyboard in Resources */,
 				38FA4E9B28B4DDDA009AFA87 /* Assets.xcassets in Resources */,
+				38524A4728CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png in Resources */,
 				385F3FBE28C2861000481084 /* song1.mp3 in Resources */,
 				385F3FF728C7356A00481084 /* Montserrat-Regular.ttf in Resources */,
 				385F3FC028C2BCF300481084 /* song2.mp3 in Resources */,
