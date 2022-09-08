@@ -132,7 +132,7 @@ class ViewController: UIViewController {
     }
     
     func createNewSong() {
-        let firstSong = Song(number: 0, name: "Moth To A Flame (with The Weekend)", singer: "Swedish House Mafia, The Weekend", poster: UIImage(named: "FirstImage"), item: AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "song1", ofType: "mp3")!)))
+        let firstSong = Song(number: 0, name: "Moth To A Flame (with The Weeknd)", singer: "Swedish House Mafia, The Weeknd", poster: UIImage(named: "FirstImage"), item: AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "song1", ofType: "mp3")!)))
         let secondSong = Song(number: 1, name: "Darker than blood", singer: "Steve Aoki feat Linkin Park", poster: UIImage(named: "SecondImage"), item: AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "song2", ofType: "mp3")!)))
         let thirdSong = Song(number: 2, name: "Still D.R.E.", singer: "Dr. Dre Feat. Snoop Dogg", poster: UIImage(named: "ThirdImage"), item: AVPlayerItem(url: URL(fileURLWithPath: Bundle.main.path(forResource: "song3", ofType: "mp3")!)))
         player.insert(firstSong.item, after: nil)
