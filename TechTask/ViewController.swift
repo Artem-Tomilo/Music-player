@@ -8,15 +8,17 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+import ScalingCarousel
 
 class ViewController: UIViewController {
     
     //MARK: - Property
     
     var player: AVQueuePlayer!
-    private var items: [AVPlayerItem] = []
+    var items: [AVPlayerItem] = []
     var songsList:[Song] = []
     static let cellIdentifier = "Cell"
+    var scalingCarousel: ScalingCarouselView!
     
     //MARK: - IBOutlet
     
@@ -39,13 +41,12 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var circleView: UIView!
     
-    @IBOutlet var collectionView: UICollectionView!
-    
     //MARK: - ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        addCarousel()
         
         settingScreen()
         
@@ -54,25 +55,34 @@ class ViewController: UIViewController {
         createNewSong()
         
         displaySongNameAndSingerName()
-        
-        collectionViewSettings()
     }
     
-    //MARK: - Collection View
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if scalingCarousel != nil {
+            scalingCarousel.deviceRotated()
+        }
+    }
     
-    func collectionViewSettings() {
-        collectionView.register(CustomCell.self, forCellWithReuseIdentifier: ViewController.cellIdentifier)
-
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(361), heightDimension: .fractionalHeight(1.0))
-        item.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 20)
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 1)
-        group.interItemSpacing = .fixed(20)
-        let section = NSCollectionLayoutSection(group: group)
-        section.orthogonalScrollingBehavior = .groupPagingCentered
-        let compositionaLayout = UICollectionViewCompositionalLayout(section: section)
-        collectionView.collectionViewLayout = compositionaLayout
+    private func addCarousel() {
+        
+        let frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        scalingCarousel = ScalingCarouselView(withFrame: frame, andInset: 20)
+        scalingCarousel.scrollDirection = .horizontal
+        scalingCarousel.dataSource = self
+        scalingCarousel.delegate = self
+        scalingCarousel.translatesAutoresizingMaskIntoConstraints = false
+        scalingCarousel.backgroundColor = .clear
+        
+        scalingCarousel.register(CustomCell.self, forCellWithReuseIdentifier: ViewController.cellIdentifier)
+        
+        view.addSubview(scalingCarousel)
+        
+        NSLayoutConstraint.activate([
+            scalingCarousel.widthAnchor.constraint(equalTo: view.widthAnchor),
+            scalingCarousel.heightAnchor.constraint(equalToConstant: 309),
+            scalingCarousel.topAnchor.constraint(equalTo: view.topAnchor, constant: 101),
+        ])
     }
     
     //MARK: - Setting Screen
@@ -194,7 +204,7 @@ class ViewController: UIViewController {
             playButton.playImage()
         }
         displaySongNameAndSingerName()
-        collectionView.selectItem(at: [0, (index)], animated: true, scrollPosition: .right)
+        scalingCarousel.scrollToItem(at: IndexPath(item: index, section: 0), at: .right, animated: true)
     }
     
     func previousSong() {
@@ -209,7 +219,7 @@ class ViewController: UIViewController {
             playButton.playImage()
         }
         displaySongNameAndSingerName()
-        collectionView.selectItem(at: [0, (index)], animated: true, scrollPosition: .left)
+        scalingCarousel.scrollToItem(at: IndexPath(item: index, section: 0), at: .left, animated: true)
     }
     
     //MARK: - IBAction

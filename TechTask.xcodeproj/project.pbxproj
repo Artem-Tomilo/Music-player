@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38524A4528CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */; };
-		38524A4728CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */; };
+		38524A4528CA3C8900010974 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4428CA3C8900010974 /* 1.png */; };
+		38524A4728CA3C8E00010974 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4628CA3C8E00010974 /* 2.png */; };
+		38524A4928CA423F00010974 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 38524A4828CA423F00010974 /* 3.png */; };
 		385F3FBE28C2861000481084 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 385F3FBD28C2861000481084 /* song1.mp3 */; };
 		385F3FC028C2BCF300481084 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 385F3FBF28C2BCF300481084 /* song2.mp3 */; };
 		385F3FC228C365C400481084 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385F3FC128C365C400481084 /* Model.swift */; };
@@ -25,11 +26,14 @@
 		38FA4E9928B4DDD8009AFA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FA4E9728B4DDD8009AFA87 /* Main.storyboard */; };
 		38FA4E9B28B4DDDA009AFA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FA4E9A28B4DDDA009AFA87 /* Assets.xcassets */; };
 		38FA4E9E28B4DDDA009AFA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FA4E9C28B4DDDA009AFA87 /* LaunchScreen.storyboard */; };
+		6A49F08FC4C53F9A018C766F /* Pods_TechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED65F34A48B74789897C232 /* Pods_TechTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png"; sourceTree = "<group>"; };
-		38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png"; sourceTree = "<group>"; };
+		1CDCB830A67962D882107902 /* Pods-TechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTask.release.xcconfig"; path = "Target Support Files/Pods-TechTask/Pods-TechTask.release.xcconfig"; sourceTree = "<group>"; };
+		38524A4428CA3C8900010974 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		38524A4628CA3C8E00010974 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		38524A4828CA423F00010974 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		385F3FBD28C2861000481084 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		385F3FBF28C2BCF300481084 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
 		385F3FC128C365C400481084 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		38FA4E9A28B4DDDA009AFA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38FA4E9D28B4DDDA009AFA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38FA4E9F28B4DDDA009AFA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED65F34A48B74789897C232 /* Pods_TechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97970B785E13822E89729614 /* Pods-TechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechTask.debug.xcconfig"; path = "Target Support Files/Pods-TechTask/Pods-TechTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A49F08FC4C53F9A018C766F /* Pods_TechTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +71,9 @@
 		38524A4328CA3C7000010974 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				38524A4428CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png */,
-				38524A4628CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png */,
+				38524A4428CA3C8900010974 /* 1.png */,
+				38524A4628CA3C8E00010974 /* 2.png */,
+				38524A4828CA423F00010974 /* 3.png */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -94,6 +102,8 @@
 			children = (
 				38FA4E9028B4DDD8009AFA87 /* TechTask */,
 				38FA4E8F28B4DDD8009AFA87 /* Products */,
+				67FCB60F599399CB28CE07EF /* Pods */,
+				8E7C6BB16764341BF1FA6CF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +137,24 @@
 			path = TechTask;
 			sourceTree = "<group>";
 		};
+		67FCB60F599399CB28CE07EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97970B785E13822E89729614 /* Pods-TechTask.debug.xcconfig */,
+				1CDCB830A67962D882107902 /* Pods-TechTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E7C6BB16764341BF1FA6CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ED65F34A48B74789897C232 /* Pods_TechTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38FA4EA228B4DDDA009AFA87 /* Build configuration list for PBXNativeTarget "TechTask" */;
 			buildPhases = (
+				7B148C32D3005D19472879ED /* [CP] Check Pods Manifest.lock */,
 				38FA4E8A28B4DDD8009AFA87 /* Sources */,
 				38FA4E8B28B4DDD8009AFA87 /* Frameworks */,
 				38FA4E8C28B4DDD8009AFA87 /* Resources */,
+				F786BF4445FC6055139801B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,10 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				385F3FCA28C4C20900481084 /* song3.mp3 in Resources */,
-				38524A4528CA3C8900010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.03.46.png in Resources */,
+				38524A4528CA3C8900010974 /* 1.png in Resources */,
 				38FA4E9E28B4DDDA009AFA87 /* LaunchScreen.storyboard in Resources */,
 				38FA4E9B28B4DDDA009AFA87 /* Assets.xcassets in Resources */,
-				38524A4728CA3C8E00010974 /* Simulator Screen Shot - iPhone 13 Pro - 2022-09-08 at 18.04.53.png in Resources */,
+				38524A4728CA3C8E00010974 /* 2.png in Resources */,
+				38524A4928CA423F00010974 /* 3.png in Resources */,
 				385F3FBE28C2861000481084 /* song1.mp3 in Resources */,
 				385F3FF728C7356A00481084 /* Montserrat-Regular.ttf in Resources */,
 				385F3FC028C2BCF300481084 /* song2.mp3 in Resources */,
@@ -199,6 +230,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B148C32D3005D19472879ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F786BF4445FC6055139801B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechTask/Pods-TechTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechTask/Pods-TechTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechTask/Pods-TechTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38FA4E8A28B4DDD8009AFA87 /* Sources */ = {
@@ -354,6 +427,7 @@
 		};
 		38FA4EA328B4DDDA009AFA87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97970B785E13822E89729614 /* Pods-TechTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +456,7 @@
 		};
 		38FA4EA428B4DDDA009AFA87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDCB830A67962D882107902 /* Pods-TechTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

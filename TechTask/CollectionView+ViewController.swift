@@ -7,13 +7,11 @@
 
 import UIKit
 
-extension ViewController: UICollectionViewDelegate {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
-}
-
-extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         songsList.count
@@ -24,13 +22,23 @@ extension ViewController: UICollectionViewDataSource {
         
         cell.picture.image = songsList[indexPath.item].poster!
         
+        DispatchQueue.main.async {
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+        }
+        
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        play(at: indexPath.item)
-        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .left)
-        playButton.pauseImage()
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let index = scalingCarousel.currentCenterCellIndex?.item
+        play(at: index ?? 0)
+        scalingCarousel.scrollToItem(at: IndexPath(item: index ?? 0, section: 0), at: .top, animated: true)
         displaySongNameAndSingerName()
+        playButton.pauseImage()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scalingCarousel.didScroll()
     }
 }

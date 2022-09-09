@@ -6,45 +6,47 @@
 //
 
 import UIKit
+import ScalingCarousel
 
-class CustomCell: UICollectionViewCell {
-    let background = UIView(frame: .zero)
+class CustomCell: ScalingCarouselCell {
+    
+    var picture = UIImageView()
     let blurView = UIView(frame: .zero)
-    var picture = UIImageView(frame: .zero)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setup() {
-        contentView.addSubview(background)
-        background.addSubview(blurView)
-        background.addSubview(picture)
         
-        background.translatesAutoresizingMaskIntoConstraints = false
+        mainView = UIView(frame: contentView.bounds)
+        contentView.addSubview(mainView)
+        mainView.addSubview(blurView)
+        mainView.addSubview(picture)
+        
+        mainView.translatesAutoresizingMaskIntoConstraints = false
         blurView.translatesAutoresizingMaskIntoConstraints = false
         picture.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            background.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -74),
-            background.topAnchor.constraint(equalTo: contentView.topAnchor),
-            background.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            background.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -74),
+            mainView.widthAnchor.constraint(equalToConstant: 341),
+            mainView.heightAnchor.constraint(equalToConstant: 309),
+            mainView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -74),
             
-            blurView.leadingAnchor.constraint(equalTo: background.leadingAnchor),
-            blurView.trailingAnchor.constraint(equalTo: background.trailingAnchor),
-            blurView.topAnchor.constraint(equalTo: background.topAnchor, constant: 16),
-            blurView.bottomAnchor.constraint(equalTo: background.bottomAnchor, constant: -16),
+            blurView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor),
+            blurView.trailingAnchor.constraint(equalTo: mainView.trailingAnchor),
+            blurView.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 16),
+            blurView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor, constant: -16),
             
-            picture.topAnchor.constraint(equalTo: background.topAnchor),
-            picture.bottomAnchor.constraint(equalTo: background.bottomAnchor),
-            picture.leadingAnchor.constraint(equalTo: background.leadingAnchor, constant: 16),
-            picture.trailingAnchor.constraint(equalTo: background.trailingAnchor, constant: -16),
+            picture.topAnchor.constraint(equalTo: mainView.topAnchor),
+            picture.bottomAnchor.constraint(equalTo: mainView.bottomAnchor),
+            picture.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 16),
+            picture.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -16),
         ])
         
         blurView.backgroundColor = UIColor(named: "blur")

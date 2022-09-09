@@ -68,24 +68,6 @@
                                     <constraint firstItem="FCO-Xb-fg8" firstAttribute="leading" secondItem="QmR-jn-NWN" secondAttribute="leading" id="z10-x3-fRw"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-eS-yFL">
-                                <rect key="frame" x="0.0" y="145" width="414" height="309"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="309" id="sZV-d8-t39"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wrz-2K-rc2">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Bje-ib-FCR"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kfn-uY-ld8"/>
-                                </connections>
-                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYk-04-B66">
                                 <rect key="frame" x="16" y="524" width="382" height="49"/>
                                 <subviews>
@@ -260,23 +242,19 @@
                             <constraint firstItem="YIR-e7-E1w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BaI-Uo-f9x"/>
                             <constraint firstItem="p3f-2P-nol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Btf-xv-rrk"/>
                             <constraint firstItem="QmR-jn-NWN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EeR-G2-S0S"/>
-                            <constraint firstItem="f5n-eS-yFL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EtZ-95-6Oo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIR-e7-E1w" secondAttribute="trailing" constant="16" id="G8q-GX-h5s"/>
                             <constraint firstItem="YIR-e7-E1w" firstAttribute="top" secondItem="lYk-04-B66" secondAttribute="bottom" constant="30" id="JOf-ZW-VUR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lYk-04-B66" secondAttribute="trailing" constant="16" id="Wvj-8R-O6A"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f5n-eS-yFL" secondAttribute="trailing" id="ZNp-zI-yML"/>
+                            <constraint firstItem="lYk-04-B66" firstAttribute="top" secondItem="QmR-jn-NWN" secondAttribute="bottom" constant="124" id="lfG-O4-xJ3"/>
                             <constraint firstItem="p3f-2P-nol" firstAttribute="top" secondItem="YIR-e7-E1w" secondAttribute="bottom" constant="50" id="r3B-Qy-IuU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QmR-jn-NWN" secondAttribute="trailing" id="rzl-Jo-WVe"/>
                             <constraint firstItem="lYk-04-B66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vta-D8-Qlv"/>
                             <constraint firstItem="QmR-jn-NWN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wB6-A0-PXz"/>
-                            <constraint firstItem="lYk-04-B66" firstAttribute="top" secondItem="f5n-eS-yFL" secondAttribute="bottom" constant="70" id="wCM-HT-m0X"/>
-                            <constraint firstItem="f5n-eS-yFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="yHa-4M-HFY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Bvc-58-jN9" id="u8u-ZX-1fF"/>
                         <outlet property="circleView" destination="Q03-0R-bU3" id="yhm-Lm-of1"/>
-                        <outlet property="collectionView" destination="f5n-eS-yFL" id="3CM-NG-XEf"/>
                         <outlet property="controlPanel" destination="p3f-2P-nol" id="gv0-u2-G59"/>
                         <outlet property="firstCircle" destination="fRW-cH-mKb" id="ttx-Hm-PiX"/>
                         <outlet property="fullSongTimeLabel" destination="0ho-3n-fSY" id="Wxj-It-0oP"/>
