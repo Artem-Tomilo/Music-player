@@ -3,13 +3,16 @@
 
 ___
 
-### Основной испльзуемый стек: UIKit, AVFoundation, MediaPlayer, CollectionView, custom collectionViewCell. 
+### Основной испльзуемый стек: UIKit, AVFoundation, MediaPlayer, CollectionView, custom collectionViewCell, библиотека "ScalingCarousel". 
 
 #### Приложение запускается с начальным экраном в виде картинки для первого трека, его названием, исполнителем и с возможностью запуска кнопкой "Старт".
-<img src="https://github.com/Umbr0o/Tech-task/blob/main/TechTask/Screens/1.png" width="300">
+<img src="https://github.com/Umbr0o/Tech-task/blob/main/TechTask/Screens/s1.png" width="300">
 
 #### При нажатии кнопки следующей песни ("Вправо") начнется воспроизведение следующего трека, а Collection View переместиться на ячейку со следующей картинкой. Также меняется и время новой песни. 
-<img src="https://github.com/Umbr0o/Tech-task/blob/main/TechTask/Screens/2.png" width="300">
+<img src="https://github.com/Umbr0o/Tech-task/blob/main/TechTask/Screens/s2.png" width="300">
+
+#### Листать треки также можно и смахиванием картинок вправо и влево
+<img src="https://github.com/Umbr0o/Tech-task/blob/main/TechTask/Screens/s3.png" width="300">
 
 #### Если на первой песне в списке нажать кнопку предыдущего трека ("Влево"), воспроизведение прекратиться, прогресс песни переместиться в начало. Те же действия для последнего трека в списке и кнопки "Вправо". 
 ___
