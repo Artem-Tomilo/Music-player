@@ -235,8 +235,4 @@ class ViewController: UIViewController {
     @IBAction func previuosSong(_ sender: UIButton) {
         previousSong()
     }
-    
-    @IBAction func sliderFunc(_ sender: UISlider) {
-        player.seek(to: CMTime(seconds: Double(slider.value), preferredTimescale: 1000))
-    }
 }
